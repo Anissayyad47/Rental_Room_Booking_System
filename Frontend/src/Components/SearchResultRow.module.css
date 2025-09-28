@@ -1,0 +1,212 @@
+.rowCard {
+  display: flex;
+  gap: 1rem;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  padding: 1rem;
+  align-items: flex-start;
+  border: 1px solid rgb(228, 224, 224);
+  margin-top: 5px;
+}
+
+
+.imageSection {
+  flex: 0 0 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.mainImage {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.thumbnails {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+.thumbnails img {
+  width: 60px;
+  height: 45px;
+  object-fit: cover;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Middle section */
+.infoSection {
+  flex: 1;
+}
+
+.title {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.location {
+  font-size: 0.95rem;
+  color: #666;
+}
+
+.type {
+  font-weight: bold;
+  margin: 0.3rem 0;
+}
+
+.amenities {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin: 0.5rem 0;
+}
+
+.amenity {
+  background: #f1f1f1;
+  padding: 3px 8px;
+  border-radius: 4px;
+  font-size: 0.85rem;
+}
+
+.rating {
+  color: #f5b50a;
+  font-weight: bold;
+}
+
+/* Right section */
+.actionSection {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  min-width: 150px;
+}
+.actionSection *{
+    margin: 5px;
+}
+.postedDate {
+  font-size: 0.85rem;
+  color: #777;
+}
+
+.priceWrapper {
+  margin: 0.5rem 0;
+}
+
+.discountPrice {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #000000;
+}
+
+.originalPrice {
+  font-size: 0.9rem;
+  text-decoration: line-through;
+  color: #999;
+  margin-left: 5px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.detailsBtn {
+  background: #f71f1f;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.cartBtn {
+  background: #f71f1f;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.reactIcon{
+  font-size: 30px;
+}
+/* Responsive */
+@media (max-width: 890px) {
+  .rowCard {
+    flex-direction: column;
+  }
+
+  .imageSection {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    width: 100%;
+  }
+
+  .mainImage {
+    width: 100%;
+    height: 200px;
+  }
+
+  .thumbnails {
+    gap: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .actionSection {
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .buttons {
+    flex-direction: row;
+    gap: 8px;
+  }
+}
+
+@media (max-width: 920px){
+.reactIcon{
+  font-size: 20px;
+}
+}
+
+.detailsGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(120px, 1fr));
+  gap: 8px 16px;
+  margin: 0.5rem 0 1rem 0;
+}
+
+.detailItem {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.9rem;
+  margin-top: 15px;
+}
+
+.icon {
+  width: 30px;
+  height: 16px;
+  background-color: transparent; /* placeholder for icon */
+  display: inline-block;
+}
+
+.label {
+  font-weight: bold;
+  color: #555;
+}
+
+.value {
+  color: #333;
+}

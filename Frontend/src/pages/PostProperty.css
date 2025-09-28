@@ -1,0 +1,62 @@
+    .property-form-container {
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 25px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .property-form-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+    }
+
+    .property-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    }
+
+    .form-group {
+    display: flex;
+    flex-direction: column;
+    }
+
+    .form-group label {
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: #444;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 15px;
+    }
+
+    .form-group textarea {
+    resize: vertical;
+    min-height: 80px;
+    }
+
+    .submit-btn {
+    padding: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    background: #007bff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.2s ease-in-out;
+    }
+
+    .submit-btn:hover {
+    background: #0056b3;
+    }

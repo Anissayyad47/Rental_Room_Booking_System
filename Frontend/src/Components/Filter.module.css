@@ -1,0 +1,69 @@
+.filterContainer {
+  width:100%;
+  background: #f7f7f7;
+  padding: 1rem;
+  border-radius: 8px;
+}
+#filterHeader{
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+#filterHeader div{
+    display: flex;
+    align-items: center;
+}
+#filterHeader h4{
+    margin-left: 10px;
+}
+#filterHeader button{
+    background-color: red;
+    color: white;
+    padding: 5px;
+    width: 40%;
+    border-radius: 8px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+#filterHeader button:hover{
+    background-color: rgb(184, 3, 3);
+}
+.filterSection {
+  margin-bottom: 1.5rem;
+}
+
+.filterSection h4 {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.checkboxLabel {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 5px 0;
+  font-size: 1rem;
+}
+
+.checkboxLabel input {
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+}
+
+/* Responsive for small screens */
+@media (max-width: 768px) {
+  .filterContainer {
+    width: 100%;
+    border-radius: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .filterSection {
+    margin-bottom: 1rem;
+  }
+}

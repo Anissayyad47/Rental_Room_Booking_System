@@ -1,0 +1,122 @@
+    /* Overlay */
+    .popup-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 0.3s ease-in-out;
+    z-index: 50;
+    }
+
+    /* Main Card */
+    .popup-card {
+    display: flex;
+    background: #ffffff;
+    border-radius: 20px;
+    overflow: hidden;
+    width: 850px;
+    max-width: 95%;
+    height: 500px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+    animation: scaleUp 0.3s ease-in-out;
+    }
+
+    /* Left Side (Image) */
+    .popup-left {
+    flex: 1;
+    overflow: hidden;
+    }
+
+    .popup-left img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    }
+
+    /* Right Side (Form) */
+    .popup-right {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    }
+
+    .popup-title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #1e3a8a; /* blue */
+    }
+
+    .popup-subtitle {
+    font-size: 16px;
+    margin-bottom: 30px;
+    color: #4b5563; /* gray */
+    }
+
+    /* Buttons */
+    .popup-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    }
+
+    .role-btn {
+    padding: 14px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    color: #fff;
+    }
+
+    .user-btn {
+    background: #ef4444; /* red */
+    }
+
+    .user-btn:hover {
+    background: #dc2626;
+    transform: scale(1.05);
+    }
+
+    .seller-btn {
+    background: #2563eb; /* blue */
+    }
+
+    .seller-btn:hover {
+    background: #1d4ed8;
+    transform: scale(1.05);
+    }
+
+    /* Cancel Button */
+    .cancel-btn {
+    margin-top: 25px;
+    font-size: 14px;
+    color: #6b7280;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: color 0.2s;
+    align-self: flex-start;
+    }
+
+    .cancel-btn:hover {
+    color: #111827;
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+    }
+
+    @keyframes scaleUp {
+    from { transform: scale(0.8); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+    }

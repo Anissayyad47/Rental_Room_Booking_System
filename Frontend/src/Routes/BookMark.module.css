@@ -1,0 +1,66 @@
+.bookmarkContainer {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+  color: #333;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+}
+
+.header span {
+  font-weight: bold;
+  color: #007bff;
+}
+
+.empty {
+  text-align: center;
+  color: #777;
+  margin-top: 30px;
+  font-size: 1.1rem;
+}
+
+.bookmarkGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.cardWrapper {
+  position: relative;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.cardWrapper:hover {
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+.removeBtn {
+  width: 100%;
+  padding: 10px;
+  background: #ff4d4d;
+  border: none;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border-top: 1px solid #ddd;
+  transition: background 0.3s;
+}
+
+.removeBtn:hover {
+  background: #e60000;
+}

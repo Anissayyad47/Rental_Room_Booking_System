@@ -1,0 +1,96 @@
+.resultsContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.searchBar{
+
+    width: 1200px;
+}
+
+.searchResult{
+
+    width: 1200px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.filter{
+    width: 25%;
+}
+.result{
+    width: 74%;
+}
+.resultTemplate{
+
+}
+.result{
+}
+
+
+/* Responsive Design  */
+@media (max-width:1220px){
+    .filter{
+        width: 250px;
+    }
+    .result{
+    }
+    
+    .searchResult{
+        width: 95%;
+    }
+    .searchBar{
+        width: 90%;
+    }
+}
+@media (max-width:1100px){
+    .filter{
+        display: none;
+    }
+    .result{
+        width: 90%;
+    }
+    .searchResult{
+        display: flex;
+        justify-content: center;
+    }
+    .searchBar{
+        width:500px;
+    }
+}
+@media (max-width:480px){
+    .searchBar{
+        width:400px;
+    }
+}
+
+/* LoadingScreen.module.css */
+.loaderWrapper {
+  position: fixed;         /* stays on top of everything */
+  top: 0;
+  left: 0;
+  width: 100vw;            /* full width */
+  height: 100vh;           /* full height */
+  background: rgba(255, 255, 255, 0.9); /* light background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;           /* make sure it’s above everything */
+}
+
+.spinner {
+  width: 60px;
+  height: 60px;
+  border: 6px solid #ddd;
+  border-top: 6px solid #3498db; /* blue spinner */
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,180 @@
+.search_bar_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px;
+  background-color: #ffffff;
+  padding: 16px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  align-items: center;
+  width: 100%;
+  margin: 20px auto;
+  border: 1px solid rgb(170, 168, 168);
+}
+
+.search_bar_container button {
+  padding: 12px 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+}
+.search_input{
+  position: relative;
+  width: 35%;
+}
+.search_history{
+  position: absolute;
+  margin-top: 5px;
+  width: 300px;
+  height: 200px;
+  border: 1px solid rgb(216, 214, 214);
+  border-radius: 5px;
+  z-index: 1000;
+  background-color: white;
+  padding: 5px;
+}
+.search_input input{
+  padding: 12px 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  width: 100%;
+}
+.search_bar_container input {
+  flex: 1;
+  min-width: 100px;
+}
+.search_history div {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+.search_history div:hover {
+  background-color: #f0f0f0;
+  cursor: pointer;
+}
+/* Dates */
+.date_picker_container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+}
+
+.date_picker_input {
+  padding: 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  width: 130px;
+  box-sizing: border-box;
+  cursor: pointer;
+  margin-left: 5px;
+}
+/* Rooms and Guest */
+.guests_rooms_container{
+  border: 1px solid rgb(194, 193, 193);
+  position: relative;
+  width: 200px;
+  padding: 5px;
+  border-radius: 8px;
+}
+.guests_rooms_input{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.add_rooms_guests{
+  margin-top: 10px;
+  position: absolute;
+  width: 300px;
+  background-color: white;
+  border: 1px solid rgb(206, 203, 203);
+  padding: 10px;
+  z-index: 1000;
+  border-radius: 8px;
+}
+.add_rooms_guests div{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+.decrement_guest_rooms{
+  color: rgb(0, 132, 255);
+}
+.decrement_guest_rooms:hover{
+  color: rgb(2, 67, 133);
+  cursor: pointer;
+  scale: 1.1;
+}
+.add_rooms_guests div select{
+  width: 100px;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+/* Search Button */
+.search_bar_container button {
+  background-color: #ff385c;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 100px;
+
+}
+.search_bar_container button:hover {
+  background-color: #961531;
+}
+.dataIcon2{
+  display:none;
+}
+@media (max-width:1220px){
+.add_rooms_guests{
+  right: 0px;
+}
+}
+
+@media (max-width:1100px){
+  .search_bar_container{
+    flex-direction: column;
+    
+  }
+  .search_input{
+    width: 90%;
+  }
+
+  .date_picker_container{
+    width: 92%;
+    flex-direction: column;
+    align-items: first baseline;
+  }
+  .dataIcon1{
+    display: none;
+  }
+  .date_picker_input{
+    width: 417px;
+    margin-bottom: 8px;
+  }
+
+  .guests_rooms_container{
+    width: 90%;
+  }
+  .search_bar_container button{
+    width: 90%;
+  }
+}
+@media (max-width:480px){
+
+  .date_picker_container{
+    width: 92%;
+    flex-direction: column;
+    align-items: first baseline;
+  }
+  .date_picker_input{
+    width: 326px;
+  }
+}

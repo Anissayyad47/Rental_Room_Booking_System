@@ -1,0 +1,119 @@
+.homeContainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+.homeContent_in{
+    /* width: 1200px; */
+    max-width: 1200px;
+
+}
+
+/* Search Bar section  */
+.search_bar_section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../assets/185319.jpg');
+    height: 350px;
+    border-radius: 10px;
+    width: 100%;
+}
+/* Rooms Nearch user */
+.local_room_section{
+    position: relative;
+}
+.local_room_section_header{
+    padding: 10px;
+}
+.local_room_section_header h1{
+    font-size: 30px;
+    font-weight: bold;
+}
+.local_room_section_content{
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+}
+.leftArrow{
+    background-color: white;
+    color: rgb(0, 195, 255);
+    border-radius: 40px;
+    padding: 10px;
+    position: absolute;
+    top: 260px;
+    left: -30px;
+    z-index: 100;
+    transition: 0.3s;
+    top: 250px;
+}
+.leftArrow:hover{
+    background-color: rgb(231, 229, 229);
+    scale: 1.1;
+}
+.leftArrow3{
+    background-color: white;
+    color: rgb(0, 195, 255);
+    border-radius: 40px;
+    padding: 10px;
+    position: absolute;
+    top: 260px;
+    left: -20px;
+    z-index: 100;
+    transition: 0.3s;
+    top: 335px;
+}
+.leftArrow3:hover{
+    background-color: rgb(231, 229, 229);
+    scale: 1.1;
+}
+.rightArrow{
+    color: rgb(0, 195, 255);
+    border-radius: 40px;
+    padding: 10px;
+    position: absolute;
+    z-index: 100;
+    background-color: white;
+    right: -10px;
+    bottom: 200px;
+    transition: 0.4s;
+}
+.rightArrow:hover{
+    background-color: rgb(231, 229, 229);
+    scale: 1.1;
+}
+
+/*  */
+.world_map{
+display: flex;
+justify-content: center;
+align-content: center;
+background-color: rgb(241, 248, 250);
+width: 100%;
+}
+
+
+@media (max-width:1220px){
+.homeContent_in{
+    min-width: 1000px;
+}
+}
+@media (max-width:1020px){
+.homeContent_in{
+    min-width: 700px;
+}
+}
+@media (max-width:750px){
+    .city_room_section{
+        display: none;
+    }
+}
+@media (max-width:700px){
+    .homeContent_in{
+        min-width: 100%;
+    }
+}
