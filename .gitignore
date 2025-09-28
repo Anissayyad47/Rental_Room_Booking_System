@@ -1,0 +1,21 @@
+# Node.js (React/Vite frontend)
+node_modules/
+dist/
+
+# Java (Spring Boot backend)
+target/
+*.class
+*.jar
+*.war
+*.ear
+
+# IDEs
+.vscode/
+.idea/
+*.iml
+
+# OS files
+.DS_Store
+
+# Sensitive configs (DON’T push secrets)
+src/main/resources/application.properties
