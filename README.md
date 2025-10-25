@@ -7,7 +7,7 @@ In the market, many rental websites focus on 1BHK, 2BHK, or flats, which are oft
 
 A full-stack room booking platform that allows users to search for rooms by location, view detailed information, and manage listings with a modern, responsive UI.
 
-Built with React.js, Redux, Tailwind CSS, Node.js, Express.js, MongoDB, AWS S3, and Google Maps API.
+Built with React.js, Redux, Tailwind CSS, Spring Boot, Google API, MySQL, MongoDB, Redis, Elasticsearch, AWS S3
 
 🚀 Features
 
@@ -38,11 +38,6 @@ Address, rent price, security deposit
 Post date and availability date
 
 ⚡ Responsive Design — Built with Tailwind CSS for a seamless experience on all devices.
-
-🛠 Tech Stack
-Frontend	Backend	Database	Cloud & APIs	Styling
-React.js	Node.js	MongoDB	AWS S3 (Image Storage)	Tailwind CSS
-Redux Toolkit	Express.js	Mongoose	Google Maps API	
 
 
 ### Login / Sign-Up
